@@ -19,15 +19,15 @@ function Header() {
               </NavLink>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link className="nav-link active-link text-primary" to="/missions">
+              <NavLink className="nav-link active-link text-primary" to="/missions">
                 Missions
-              </Nav.Link>
+              </NavLink>
             </Nav.Item>
             <div className="vr" />
             <Nav.Item>
-              <Nav.Link className="nav-link active-link text-primary" to="/profile">
+              <NavLink className="nav-link active-link text-primary" to="/profile">
                 My Profile
-              </Nav.Link>
+              </NavLink>
             </Nav.Item>
           </Nav>
         </Navbar.Collapse>
