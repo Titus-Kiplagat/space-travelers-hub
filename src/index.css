@@ -10,3 +10,7 @@
 .text-color {
   color: blue;
 }
+
+.bold {
+  font-weight: bolder;
+}

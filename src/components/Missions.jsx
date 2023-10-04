@@ -25,7 +25,7 @@ const Missions = () => {
       <tbody>
         {missions.map(({ missionId, missionName, description }) => (
           <tr key={missionId}>
-            <td>{missionName}</td>
+            <td className="bold">{missionName}</td>
             <td>{description}</td>
             <div className="buttons">
               <Button variant="secondary">NOT A MEMBER</Button>
