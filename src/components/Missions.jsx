@@ -1,5 +1,3 @@
-/** @format */
-
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchMissions } from '../redux/missionsSlice';
@@ -10,7 +8,7 @@ const Missions = () => {
 
   useEffect(() => {
     dispatch(fetchMissions());
-  }, []);
+  }, [dispatch]);
 
   return (
     <div>
