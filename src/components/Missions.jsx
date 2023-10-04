@@ -27,10 +27,12 @@ const Missions = () => {
           <tr key={missionId}>
             <td className="bold">{missionName}</td>
             <td>{description}</td>
-            <div className="buttons">
+            <td className="buttons">
               <Button variant="secondary">NOT A MEMBER</Button>
+            </td>
+            <td className="buttons">
               <Button variant="light">JOIN MISSION</Button>
-            </div>
+            </td>
           </tr>
         ))}
       </tbody>
