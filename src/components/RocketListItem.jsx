@@ -1,4 +1,3 @@
-/* eslint-disable no-console */
 import { Button, ListGroup } from 'react-bootstrap';
 import { useDispatch } from 'react-redux';
 import PropTypes from 'prop-types';
