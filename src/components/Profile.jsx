@@ -1,5 +1,5 @@
 const Profile = () => (
-  <div>
+  <div className="container">
     Profile
   </div>
 );

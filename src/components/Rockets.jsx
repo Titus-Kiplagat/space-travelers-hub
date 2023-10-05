@@ -19,7 +19,7 @@ const Rockets = () => {
       rockets.map(({
         id, name, images, description,
       }) => (
-        <Card key={id} className="mb-3 border-0">
+        <Card key={id} className="mb-3 border-0 container">
           <Container fluid>
             <Stack direction="horizontal" gap={3}>
               <Card.Img variant="top" src={images[0]} className="custom-width" />

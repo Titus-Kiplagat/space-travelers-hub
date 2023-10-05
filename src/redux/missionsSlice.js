@@ -1,5 +1,3 @@
-/** @format */
-
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
@@ -26,7 +24,16 @@ export const fetchMissions = createAsyncThunk(
 const missionsSlice = createSlice({
   name: 'missions',
   initialState,
-  reducers: {},
+  reducers: {
+    joinMission: (state, action) => {
+      state.missions = state.missions.map((mission) => {
+        if (mission.missionId !== action.payload) {
+          return { ...mission };
+        }
+        return { ...mission, reserved: true };
+      });
+    },
+  },
   extraReducers: {
     [fetchMissions.pending]: (state) => {
       state.loading = true;
@@ -44,4 +51,5 @@ const missionsSlice = createSlice({
   },
 });
 
+export const { joinMission } = missionsSlice.actions;
 export default missionsSlice.reducer;
