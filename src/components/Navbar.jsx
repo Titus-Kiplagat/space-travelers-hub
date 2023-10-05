@@ -4,7 +4,7 @@ import planet from '../assets/planet.png';
 
 function Header() {
   return (
-    <Navbar sticky="top" bg="light" expand="lg" className="border-bottom container">
+    <Navbar sticky="top" bg="light" expand="lg" className="border-bottom px-5">
       <Container fluid>
         <NavLink to="/" className="navbar-brand d-flex align-center">
           <img src={planet} alt="space travelers' hub logo" width="40" height="40" />
