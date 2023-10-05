@@ -11,6 +11,10 @@
   color: blue;
 }
 
+.custom-width {
+  width: 18rem !important;
+}
+
 .bold {
   font-weight: bolder;
 }
