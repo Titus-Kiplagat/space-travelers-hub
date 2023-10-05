@@ -1,9 +1,10 @@
+/* eslint-disable no-console */
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import {
   Button, Card, Stack, Container,
 } from 'react-bootstrap';
-import { fetchRockets, reserveRocket } from '../redux/rocketsSlice';
+import { cancelRocket, fetchRockets, reserveRocket } from '../redux/rocketsSlice';
 
 const Rockets = () => {
   const { rockets } = useSelector((state) => state.rockets);
@@ -17,7 +18,7 @@ const Rockets = () => {
     <>
       {
       rockets.map(({
-        id, name, images, description,
+        id, name, images, description, reserved,
       }) => (
         <Card key={id} className="mb-3 border-0">
           <Container fluid>
@@ -26,7 +27,8 @@ const Rockets = () => {
               <Card.Body>
                 <Card.Title>{name}</Card.Title>
                 <Card.Text>{description}</Card.Text>
-                <Button onClick={() => dispatch(reserveRocket(id))} variant="primary">Reserve Rocket</Button>
+                {reserved ? (<Button onClick={() => dispatch(cancelRocket(id))} variant="outline-secondary">Cancel Reservation</Button>)
+                  : (<Button onClick={() => dispatch(reserveRocket(id))} variant="primary">Reserve Rocket</Button>)}
               </Card.Body>
             </Stack>
           </Container>
