@@ -14,8 +14,8 @@ const Profile = () => {
     <div className="px-5 d-flex justify-content-between gap-5">
       <div className="w-100">
         <h3 className="font-bold py-2">My Missions</h3>
-        {reservedRockets.length === 0 && (
-          <p className="fs-2">You have no reserved rockets</p>
+        {reservedMissions.length === 0 && (
+          <p className="fs-2">You have no reserved missions</p>
         )}
         <ListGroup className="my-2">
           {reservedMissions.map(({ missionName, missionId }) => (
