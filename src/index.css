@@ -11,3 +11,7 @@
 .text-color {
   color: blue;
 }
+
+.custom-width {
+  width: 20rem!important;
+}
