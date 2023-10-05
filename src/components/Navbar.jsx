@@ -14,18 +14,18 @@ function Header() {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
             <Nav.Item>
-              <NavLink className="nav-link active-link text-primary" to="/rockets">
+              <NavLink className="nav-link active-link text-primary bold" to="/rockets">
                 Rockets
               </NavLink>
             </Nav.Item>
             <Nav.Item>
-              <NavLink className="nav-link active-link text-primary" to="/missions">
+              <NavLink className="nav-link active-link text-primary bold" to="/missions">
                 Missions
               </NavLink>
             </Nav.Item>
-            <div className="vr" />
+            <div className="vr bold" />
             <Nav.Item>
-              <NavLink className="nav-link active-link text-primary" to="/profile">
+              <NavLink className="nav-link active-link text-primary bold" to="/profile">
                 My Profile
               </NavLink>
             </Nav.Item>

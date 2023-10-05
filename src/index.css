@@ -1,3 +1,5 @@
+/** @format */
+
 * {
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
@@ -16,5 +18,5 @@
 }
 
 .bold {
-  font-weight: bolder;
+  font-weight: bolder !important;
 }

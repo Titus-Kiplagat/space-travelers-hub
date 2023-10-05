@@ -1,4 +1,3 @@
-/* eslint-disable max-len */
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { ListGroup } from 'react-bootstrap';
