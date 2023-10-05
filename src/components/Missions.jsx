@@ -3,7 +3,11 @@
 import { Table, Button, Badge } from 'react-bootstrap';
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { fetchMissions, joinMission, leaveMission } from '../redux/missionsSlice';
+import {
+  fetchMissions,
+  joinMission,
+  leaveMission,
+} from '../redux/missionsSlice';
 
 const Missions = () => {
   const { missions, loading, error } = useSelector((state) => state.missions);
@@ -49,7 +53,8 @@ const Missions = () => {
             <td className="align-middle text-center">
               {reserved ? (
                 <Button
-                  className="w-100 btn btn-outline-danger border-2 bold btn-sm"
+                  size="lg"
+                  className="w-100 btn-outline-danger border-2 bold"
                   variant="light"
                   onClick={() => dispatch(leaveMission(missionId))}
                 >
@@ -57,7 +62,8 @@ const Missions = () => {
                 </Button>
               ) : (
                 <Button
-                  className="w-100 btn btn-outline-secondary border-2 bold btn-sm"
+                  size="lg"
+                  className="w-100 btn-outline-secondary border-2 bold"
                   variant="light"
                   onClick={() => dispatch(joinMission(missionId))}
                 >
