@@ -4,9 +4,9 @@ import axios from 'axios';
 const URL = 'https://api.spacexdata.com/v3/rockets';
 
 export const fetchRockets = createAsyncThunk('rockets/fetchRockets', async (_, { rejectWithValue }) => axios.get(URL).then((response) => response.data.map(({
-  id, rocket_name: name, rocket_type: type, flickr_images: images,
+  id, rocket_name: name, rocket_type: type, flickr_images: images, description,
 }) => ({
-  id, name, type, images,
+  id, name, type, images, description,
 }))).catch((error) => rejectWithValue(error.message)));
 
 const initialState = {
