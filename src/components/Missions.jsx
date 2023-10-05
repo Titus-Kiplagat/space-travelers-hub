@@ -39,7 +39,7 @@ const Missions = () => {
               </Badge>
             </td>
             <td className="align-middle text-center">
-              <Button className="btn btn-outline-secondary border-2 bold btn-sm" variant="light" onClick={() => dispatch(joinMission())}>
+              <Button className="btn btn-outline-secondary border-2 bold btn-sm" variant="light" onClick={() => dispatch(joinMission(missionId))}>
                 Join Mission
               </Button>
             </td>
