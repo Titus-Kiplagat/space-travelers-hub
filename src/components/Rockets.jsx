@@ -2,7 +2,7 @@
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import {
-  Button, Card, Stack, Container,
+  Button, Card, Stack, Container, Badge,
 } from 'react-bootstrap';
 import { cancelRocket, fetchRockets, reserveRocket } from '../redux/rocketsSlice';
 
@@ -26,7 +26,10 @@ const Rockets = () => {
               <Card.Img variant="top" src={images[0]} className="custom-width" />
               <Card.Body>
                 <Card.Title>{name}</Card.Title>
-                <Card.Text>{description}</Card.Text>
+                <Card.Text>
+                  {reserved && <Badge className="me-2">Reserved</Badge>}
+                  {description}
+                </Card.Text>
                 {reserved ? (<Button onClick={() => dispatch(cancelRocket(id))} variant="outline-secondary">Cancel Reservation</Button>)
                   : (<Button onClick={() => dispatch(reserveRocket(id))} variant="primary">Reserve Rocket</Button>)}
               </Card.Body>
