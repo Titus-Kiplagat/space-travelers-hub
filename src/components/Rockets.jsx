@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import {
   Button, Card, Stack, Container,
 } from 'react-bootstrap';
-import { fetchRockets } from '../redux/rocketsSlice';
+import { fetchRockets, reserveRocket } from '../redux/rocketsSlice';
 
 const Rockets = () => {
   const { rockets } = useSelector((state) => state.rockets);
@@ -26,10 +26,9 @@ const Rockets = () => {
               <Card.Body>
                 <Card.Title>{name}</Card.Title>
                 <Card.Text>{description}</Card.Text>
-                <Button variant="primary">Learn More</Button>
+                <Button onClick={() => dispatch(reserveRocket(id))} variant="primary">Reserve Rocket</Button>
               </Card.Body>
             </Stack>
-
           </Container>
         </Card>
       ))
