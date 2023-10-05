@@ -20,3 +20,7 @@
 .bold {
   font-weight: bolder !important;
 }
+
+.max-content-width {
+  width: max-content;
+}
