@@ -30,7 +30,8 @@ const Missions = () => {
           <tr>
             <th>Mission</th>
             <th>Description</th>
-            <th colSpan={4}>Status</th>
+            <th>Status</th>
+            <th>{ }</th>
           </tr>
         </thead>
         <tbody>
@@ -39,7 +40,7 @@ const Missions = () => {
           }) => (
             <tr key={missionId}>
               <td className="bold">{missionName}</td>
-              <td colSpan={9}>{description}</td>
+              <td>{description}</td>
               <td className="align-middle text-center">
                 {reserved ? (
                   <Badge className="bold bg-primary" variant="secondary">
