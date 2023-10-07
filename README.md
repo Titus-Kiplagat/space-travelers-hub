@@ -133,9 +133,9 @@ To run the project, execute the following command:
 
 👤 **Titus Kiplagat**
 
-- GitHub: [@Titus]()
-- Twitter: [@Titus]()
-- LinkedIn: [Titus]()
+- GitHub: [@Titus](https://github.com/Titus-Kiplagat)
+- Twitter: [@Titus](https://twitter.com/_tittoh_code)
+- LinkedIn: [Titus](https://www.linkedin.com/in/titus-kiplagat-5146ba210/)
 
 👤 **Victor Kanyi**
 
