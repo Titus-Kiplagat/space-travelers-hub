@@ -44,7 +44,7 @@
 <details>
   <summary>Server</summary>
   <ul>
-    <li><a href="https://render.com/">Render</a></li>
+    <li><a href="https://render.com/">Github Pages</a></li>
   </ul>
 </details>
 
