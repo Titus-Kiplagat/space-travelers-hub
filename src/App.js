@@ -9,7 +9,7 @@ import Missions from './components/Missions';
 
 function App() {
   return (
-    <Router basename="/space-travelers-hub">
+    <Router>
       <Header />
       <Routes>
         <Route path="/" element={<Rockets />} />
