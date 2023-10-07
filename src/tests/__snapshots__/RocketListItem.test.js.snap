@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<div
+  className="d-flex gap-3 border-0 list-group-item"
+  onClick={[Function]}
+>
+  <img
+    alt="Falcon 9"
+    className="custom-width"
+    src="image1.jpg"
+  />
+  <div
+    className="w-100"
+  >
+    <h3
+      className="fw-bolder"
+    >
+      Falcon 9
+    </h3>
+    <p
+      className="fs-5 mb-4"
+    >
+      This is a rocket
+    </p>
+    <button
+      className="btn btn-primary"
+      disabled={false}
+      onClick={[Function]}
+      type="button"
+    >
+      Reserve Rocket
+    </button>
+  </div>
+</div>
+`;

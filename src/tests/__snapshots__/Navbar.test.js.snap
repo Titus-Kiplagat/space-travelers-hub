@@ -1,0 +1,88 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<nav
+  className="border-bottom px-5 navbar navbar-expand-lg navbar-light bg-light sticky-top"
+>
+  <div
+    className="container-fluid"
+  >
+    <a
+      aria-current="page"
+      className="navbar-brand d-flex align-center active"
+      href="/"
+      onClick={[Function]}
+    >
+      <img
+        alt="space travelers' hub logo"
+        height="40"
+        src="planet.png"
+        width="40"
+      />
+      <span
+        className="ms-3 fw-bold fs-3"
+      >
+        Space Travelers' Hub
+      </span>
+    </a>
+    <button
+      aria-controls="basic-navbar-nav"
+      aria-label="Toggle navigation"
+      className="navbar-toggler collapsed"
+      onClick={[Function]}
+      type="button"
+    >
+      <span
+        className="navbar-toggler-icon"
+      />
+    </button>
+    <div
+      aria-expanded={null}
+      className="navbar-collapse collapse"
+      id="basic-navbar-nav"
+    >
+      <div
+        className="ms-auto navbar-nav"
+        onKeyDown={[Function]}
+      >
+        <div
+          className="nav-item"
+        >
+          <a
+            className="nav-link active-link text-primary bold"
+            href="/rockets"
+            onClick={[Function]}
+          >
+            Rockets
+          </a>
+        </div>
+        <div
+          className="nav-item"
+        >
+          <a
+            className="nav-link active-link text-primary bold"
+            href="/missions"
+            onClick={[Function]}
+          >
+            Missions
+          </a>
+        </div>
+        <div
+          className="vr bold"
+        />
+        <div
+          className="nav-item"
+        >
+          <a
+            className="nav-link active-link text-primary bold"
+            href="/profile"
+            onClick={[Function]}
+          >
+            My Profile
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+`;

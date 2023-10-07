@@ -1,0 +1,30 @@
+/** @format */
+
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.active-link {
+  text-decoration: underline;
+}
+
+.active-link:focus {
+  text-decoration: underline;
+}
+
+.text-color {
+  color: blue;
+}
+
+.custom-width {
+  width: 20rem;
+}
+
+.bold {
+  font-weight: bolder !important;
+}
+
+.max-content-width {
+  width: max-content;
+}
