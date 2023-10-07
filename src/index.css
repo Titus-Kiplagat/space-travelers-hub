@@ -5,6 +5,10 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.active-link {
+  text-decoration: underline;
+}
+
 .active-link:focus {
   text-decoration: underline;
 }
@@ -23,8 +27,4 @@
 
 .max-content-width {
   width: max-content;
-}
-
-.active-link {
-  text-decoration: underline;
 }
