@@ -1,3 +1,5 @@
+/** @format */
+
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Navbar';
@@ -7,7 +9,7 @@ import Missions from './components/Missions';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/space-travelers-hub">
       <Header />
       <Routes>
         <Route path="/" element={<Rockets />} />
