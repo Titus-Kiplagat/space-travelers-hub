@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<div
+  className="px-5"
+>
+  <table
+    className="container-fluid table table-striped table-bordered"
+  >
+    <thead>
+      <tr>
+        <th>
+          Mission
+        </th>
+        <th>
+          Description
+        </th>
+        <th
+          colSpan={4}
+        >
+          Status
+        </th>
+      </tr>
+    </thead>
+    <tbody />
+  </table>
+</div>
+`;
