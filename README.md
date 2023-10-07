@@ -63,9 +63,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://space-travellers-rockets-and-missions.onrender.com)
-
-<img style="margin: 0 auto; width:600px; height:300px;" src='./images/Live-version-SS.png'/>
+n/a
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
