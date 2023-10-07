@@ -14,8 +14,10 @@ const Missions = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch(fetchMissions());
-  }, [dispatch]);
+    if (!missions.length) {
+      dispatch(fetchMissions());
+    }
+  }, [dispatch, missions]);
 
   if (loading) {
     return <h1 className="container align-middle text-center">Loading...</h1>;
@@ -31,7 +33,7 @@ const Missions = () => {
             <th>Mission</th>
             <th>Description</th>
             <th>Status</th>
-            <th>{ }</th>
+            <th>{}</th>
           </tr>
         </thead>
         <tbody>

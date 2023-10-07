@@ -24,3 +24,7 @@
 .max-content-width {
   width: max-content;
 }
+
+.active-link {
+  text-decoration: underline;
+}
